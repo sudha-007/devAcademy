@@ -1,0 +1,23 @@
+package com.cerner.devAcademy.factorialProject;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+
+public class TestMain {
+	
+	@Mock
+	App object;
+
+	@Test
+	public void testStarter() {
+		doNothing().when(object).starter();
+		verify(object).starter();
+	} 
+	
+}

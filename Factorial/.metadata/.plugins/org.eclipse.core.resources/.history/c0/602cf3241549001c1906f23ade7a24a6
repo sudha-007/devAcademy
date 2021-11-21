@@ -1,0 +1,26 @@
+package com.cerner.devAcademy.factorialProject;
+
+import org.apache.log4j.Logger;
+
+public class Factorial {
+	static final Logger logger = Logger.getLogger(Factorial.class);
+	public int countFactorial(int input) {
+		int answer=1;
+		
+		if(input<0 || input>12) {
+			logger.info("Invalid Input has been provided");
+			throw new ArithmeticException("Entered no is not valid here");
+		}
+		else {
+			
+			while(input>=1) {
+				answer *= input;
+				input--;
+			}
+			
+		}
+		
+		
+		return answer;
+	}
+}

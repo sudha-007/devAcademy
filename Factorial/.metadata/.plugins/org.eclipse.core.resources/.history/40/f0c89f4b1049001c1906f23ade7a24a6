@@ -1,0 +1,23 @@
+package com.cerner.devAcademy.factorialProject;
+
+import java.util.Scanner;
+
+/**
+ * @author Anuj Singh
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Scanner input = new Scanner(System.in);
+        Factorial object = new Factorial();
+        System.out.println("Enter the No: ");
+        int number=input.nextInt();
+        
+        System.out.println(object.countFactorial(number));
+        
+        input.close();
+        
+    }
+}

@@ -1,0 +1,27 @@
+package com.cerner.devAcademy.factorialProject;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * Unit test for simple App.
+ * @author Anuj Singh
+ */
+public class AppTest 
+{
+    /**
+     * Rigorous Test :-)
+     */
+	@Before
+	void init() {
+		App object = new App();
+	}
+	
+	
+    @Test
+    public void happyFlowTest() {
+    	
+    }
+}

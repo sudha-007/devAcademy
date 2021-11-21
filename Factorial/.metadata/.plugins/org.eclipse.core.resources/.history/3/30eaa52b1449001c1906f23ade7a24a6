@@ -1,0 +1,41 @@
+package com.cerner.devAcademy.factorialProject;
+
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
+/**
+ * @author Anuj Singh
+ *
+ */
+public class App 
+{
+	static final Logger logger = Logger.getLogger(App.class);
+	
+    public static void main( String[] args )
+    {
+        App object = new App();
+        object.starter();
+        
+    }
+    
+    public void starter() {
+   
+        Factorial object = new Factorial();
+        
+        int number = inputTaker();
+        int answer = object.countFactorial(number);
+        
+        logger.info(answer);
+        
+        
+    }
+    
+    public int inputTaker() {
+    	
+    	Scanner input = new Scanner(System.in);
+    	logger.info("Input Number:");
+        int number=input.nextInt();
+        input.close();
+    }
+}

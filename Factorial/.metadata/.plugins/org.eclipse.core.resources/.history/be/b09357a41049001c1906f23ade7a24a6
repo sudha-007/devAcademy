@@ -1,0 +1,17 @@
+package com.cerner.devAcademy.factorialProject;
+
+public class Factorial {
+	public int countFactorial(int input) {
+		int answer=1;
+		
+		if(input<0 || input>12) {
+			
+		}
+		
+		while(input>=1) {
+			answer*=input;
+			input--;
+		}
+		return answer;
+	}
+}

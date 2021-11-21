@@ -1,0 +1,17 @@
+package com.cerner.devAcademy.CodeCampOne;
+
+import java.util.HashSet;
+
+import org.apache.log4j.Logger;
+
+public class PairFinder {
+	
+	static final Logger logger = Logger.getLogger(App.class);
+	
+	public void pairs(int A[], int sum) {
+		
+		HashSet<Integer> set = new HashSet<Integer>();
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.cerner.devAcademy.CodeCampOne;
+
+import java.util.HashSet;
+
+import org.apache.log4j.Logger;
+
+public class PairFinder {
+	
+	static final Logger logger = Logger.getLogger(App.class);
+	
+	public HashSet<Integer> pairs(int A[], int sum) {
+		
+		HashSet<Integer> set = new HashSet<Integer>();
+		HashSet<Integer> answer = new HashSet<Integer>();
+		answer.add(-1);
+		answer.add(-1);
+		for(int i = 0; i<A.length;i++) {
+			int temp = sum - A[i];
+			if(set.contains(temp)) {
+				logger.info("Pair: ("+ A[i] +"," + temp +" )");
+				answer.add(A[i]);
+				answer.add(temp);
+			}
+			set.add(temp);
+		}
+		return answer;
+		
+	}
+
+}
